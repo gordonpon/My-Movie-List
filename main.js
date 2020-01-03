@@ -37,7 +37,7 @@
             <img class="card-img-top " src="${POSTER_URL}${item.image}" alt="Card image cap">
             <div class="card-body movie-item-body">
               <h6 class="card-title">${item.title}</h6>          
-              <p class="hashtag h6"><mark><small>${controller.getGenres(item.genres)}</small></mark></div>
+              ${controller.getGenres(item.genres)}
             </div>
           </div>
         </div> `
