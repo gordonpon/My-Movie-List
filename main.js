@@ -149,8 +149,8 @@
     getGenres(arr) {
       let j, k = ''
       for(let i=0; i<arr.length; i++) {
-        j = arr[i]
-        k += model.genresData[j]
+        j = arr[i] //API Data內genres資料
+        k += `<mark class="mr-2"><small>${model.genresData[j]}</small></mark>`
       }
       return k
     }
